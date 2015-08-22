@@ -1,0 +1,13 @@
+# Site settings
+title: Chris Zempel
+email: hi@chriszempel.com
+description: > # this means to ignore newlines until "baseurl:"
+  Chris Zempel specializes in web development and user experience design
+  with Ruby on Rails, Javascript, HTML5, and CSS3
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://chriszempel.com" # the base hostname & protocol for your site
+twitter_username: zemptime
+github_username:  zemptime
+
+# Build settings
+markdown: kramdown
