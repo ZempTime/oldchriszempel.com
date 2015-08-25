@@ -44,6 +44,10 @@
         line-height: 3.7;
 
         font-weight: 800;
+        &:hover {
+          text-decoration: none;
+          border-bottom: 4px solid white;
+        }
     }
 
     @include media-query($on-palm) {
@@ -81,7 +85,7 @@
 
         &:hover .trigger {
             display: block;
-            padding-bottom: 5px;
+            padding-bottom: 6px;
         }
 
         .page-link {
@@ -194,4 +198,17 @@ footer {
             font-size: 18px;
         }
     }
+}
+
+#title {
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+
+#title:hover {
+  color: #CCCCCC !important;
+  cursor: pointer;
+  text-decoration: none;
 }
