@@ -4,8 +4,19 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm a Ruby on Rails developer located out of St. Louis, MO.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Spent 9 months teaching myself to code while working part time at Dewey’s Pizza. Then, I applied to <a href="https://www.launchcode.org/">LaunchCode</a>, and out of over 500 applicants, got one of the top placements and started making software instead of pizza.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Three months later, I took over Ruby on Rails development for <a href="https://gianthatworks.com/">Giant Hat,</a> where I still happily ship code.
+
+My favorite part of development isn't changing graphics on a page or even necessarily writing code itself. What I love is finding the vision for the application I'm building that's so succint that when others see it, developers AND users...they can just <i>get it.</i>
+
+I think there's a huge lack of true vision in the world, and love talking with people who have a conviction about what the future looks like.
+
+Also happy to help give some advice on how to get your idea off the ground!
+
+<p class="text-center">
+  <a href="mailto:chris.m.zempel@gmail.com" target="_top" class="btn btn-success text-center">Let's Chat!</a>
+</p>
+
