@@ -1,3 +1,12 @@
+---
+layout: page
+title: Ideas
+permalink: /ideas/
+---
+
+Here, I will collect and publicize the musings that typically reside in
+one of the notebooks I carry around.
+
 ## Aging
 
 I grew up with a Boston Terrier named Molly. Boston's have a life

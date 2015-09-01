@@ -2,3 +2,4 @@ _site
 .ruby_version
 .DS_Store
 fonts
+s3_website.yml
