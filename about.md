@@ -6,7 +6,7 @@ permalink: /about/
 
 I'm a Ruby on Rails developer located out of St. Louis, MO.
 
-Spent 9 months teaching myself to code while working part time at Dewey’s Pizza. Then, I applied to <a href="https://www.launchcode.org/">LaunchCode</a>, and out of over 500 applicants, got one of the top placements and started making software instead of pizza. <a href="https://chriszempel.com/blog">(you can check out my journey here - the 2013 posts)</a>
+Spent 9 months teaching myself to code while working part time at Dewey’s Pizza. Then, I applied to <a href="https://www.launchcode.org/">LaunchCode</a>, and out of over 500 applicants, got one of the top placements and started making software instead of pizza. <a href="http://chriszempel.com/blog">(you can check out my journey here - the 2013 posts)</a>
 
 Three months later, I took over Ruby on Rails development for <a href="https://gianthatworks.com/">Giant Hat,</a> where I still happily ship code.
 
