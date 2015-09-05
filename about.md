@@ -17,6 +17,6 @@ I think there's a huge lack of true vision in the world, and love talking with p
 Also happy to help give some advice on how to get your idea off the ground!
 
 <p class="text-center">
-  <a href="mailto:chris.m.zempel@gmail.com" target="_top" class="btn btn-success text-center">Let's Chat!</a>
+  <a href="mailto:chris.m.zempel@gmail.com" target="_top" class="btn btn-default maroon text-center">Let's Chat!</a>
 </p>
 

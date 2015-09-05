@@ -22,7 +22,7 @@ Whenever I go from abstract concepts to practical application, I worry I sound r
 
 <div style="width: 917px" class="wp-caption alignnone">![think I](http://i.imgur.com/ZQn8jsB.jpg)
 
-Didn&#8217;t know Apple was into male modeling
+Didn't know Apple was into male modeling
 </div>
 
 But I really do think there’s a formula, a way to diversify your time portfolio, which brings about the greatest opportunity for success.
