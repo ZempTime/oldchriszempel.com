@@ -4,8 +4,6 @@ title:  "The Development Behind InvisibleGirlfriend"
 date:   2015-08-06 11:22:25
 ---
 
-# The Development Behind Invisible Girlfriend
-
 In the first version of Invisible Girlfriend, you could have multiple girlfriends. I had actual methods in the code named “elope,” and “divorce” to manage the intricacies of your desired relationship(s), but even at this point I called them “Partners” because I knew there were plans for the Invisible Boyfriend side (which I was also coding for). But even that was tenuous.
 
 There were so many unknowns that I decided to have fun with it. I rewrote the default “Update” buttons on pages where you could view or edit your girlfriend with text like, “Let’s Date” or “Bye, Stephanie” (if your girlfriend was named Stephanie and you wanted to break up with her). This drew smiles and some giggles from the rest of the IG team the first time I demoed what I’d envisioned for them.

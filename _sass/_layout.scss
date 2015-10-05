@@ -218,3 +218,19 @@ footer {
   cursor: pointer;
   text-decoration: none;
 }
+
+
+/**
+ * Work Section
+ */
+
+.work {
+    border-radius: 25px;
+    border: 2px solid $grey-color-light;
+    padding: 20px; 
+    display: block;
+    p {
+      font-size: 16px;
+    }
+    height: 274px;
+}
