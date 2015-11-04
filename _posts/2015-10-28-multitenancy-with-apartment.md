@@ -228,14 +228,3 @@ Now the thing is, if you use Sidekiq, you won't need to worry about this - check
 > That's it. There's nothing to do. Each job that is queued will get an additional entry storing Apartment::Tenant.current when it is queued. Then when the server pops it, it will run job within an Apartment::Tenant.switch block.
 
 You look down at the unconscious hacker, and look away in disgust while strongly exhale an "Ugh!" Spandex is a privelege, not a right.
-
-* When and why do you need multitenancy?
-* What are the approaches?
-  postgres & single table
-  * Apartment
-* Public vs Private
-  * namespacing
-  * defining your table of contents
-  * setting up your tenancy
-* Background Jobs
-* Roles & Authorization
