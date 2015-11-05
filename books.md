@@ -75,3 +75,7 @@ in another place for a while, do yourself a favor and read this book.
 [Mastery](http://www.amazon.com/Mastery-Robert-Greene/dp/014312417X/ref=sr_1_1?s=books&ie=UTF8&qid=1441065829&sr=1-1&keywords=mastery+robert+greene)
 
 This book is worth reading twenty times over your life, ever six months. I'm only on #4.
+
+[Masters of Doom](http://www.amazon.com/Masters-Doom-Created-Transformed-Culture/dp/0812972155)
+
+This book makes me ridiculously happy, because it's about the journey of people finding the things they're happiest doing.
