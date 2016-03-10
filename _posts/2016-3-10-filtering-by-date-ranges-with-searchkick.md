@@ -14,24 +14,25 @@ Let's set the stage:
 
 ```ruby
 # We've got our model that we want to filter:
-class Lemon < ActiveModel::Base
-  searchkick
+  class Lemon < ActiveModel::Base
+    searchkick
 
-  def search_data
-    {
-      name: name,
-      good_until: good_until,
-      picked_at: picked_at,
-      description: description
-    }
-end
+    def search_data
+      {
+        name: name,
+        good_until: good_until,
+        picked_at: picked_at,
+        description: description
+      }
+    end
+  end
 
 # And our controller where the magic happens
-class LemonsController < ApplicationController
-  def search
-    @lemons = Lemon.search("*").results
+  class LemonsController < ApplicationController
+    def search
+      @lemons = Lemon.search("*").results
+    end
   end
-end
 ```
 
 We want to know all the lemons that will be good until next week! To do that, we need to hit:
@@ -39,11 +40,11 @@ We want to know all the lemons that will be good until next week! To do that, we
 `localhost:3000/lemons/search?good_until=2016-03-17`
 
 ```ruby
-class LemonsController < ApplicationController
-  def search
-    @lemons = Lemon.search("*", { where: { picked_at: {lte: params[:good_until]} }).results
+  class LemonsController < ApplicationController
+    def search
+      @lemons = Lemon.search("*", { where: { picked_at: {lte: params[:good_until]} }).results
+    end
   end
-end
 ```
 
 But what if we want the lemons good until next, but picked within the last week, too?
@@ -51,11 +52,11 @@ But what if we want the lemons good until next, but picked within the last week,
 `localhost:3000/lemons/search?good_until=2016-03-17&picked_at=2016-03-03`
 
 ```ruby
-class LemonsController < ApplicationController
-  def search
-    @lemons = Lemon.search("*", { where: { good_until: {lte: params[:good_until], gte: params[:picked_at]} }).results
+  class LemonsController < ApplicationController
+    def search
+      @lemons = Lemon.search("*", { where: { good_until: {lte: params[:good_until], gte: params[:picked_at]} }).results
+    end
   end
-end
 ```
 
 Scratch both those - we want to show the results for any lemons good until next week, OR picked within the last two weeks (even if they've gone bad)
@@ -63,11 +64,11 @@ Scratch both those - we want to show the results for any lemons good until next 
 `localhost:3000/lemons/search?good_until=2016-03-17&picked_at=2016-02-25`
 
 ```ruby
-class LemonsController < ApplicationController
-  def search
-    @lemons = Lemon.search("*", { where: { good_until: {lte: params[:good_until]}, or: [ picked_at: {gte: params[:picked_at]}]} }).results
+  class LemonsController < ApplicationController
+    def search
+      @lemons = Lemon.search("*", { where: { good_until: {lte: params[:good_until]}, or: [ picked_at: {gte: params[:picked_at]}]} }).results
+    end
   end
-end
 ```
 
 There are two things to pay attention to:
@@ -84,12 +85,12 @@ I went to the [SearchKick](https://github.com/ankane/searchkick) readme and sear
 I put an aggregation in my controller with the same syntax as the readme:
 
 ```ruby
-class LemonsController < ApplicationController
-  def search
-    date_ranges = [{from: params[:picked_at], to: params[:good_until]}]
-    @lemons = Lemon.search("*", aggs: {date_field: {date_ranges: date_ranges}}).results
+  class LemonsController < ApplicationController
+    def search
+      date_ranges = [{from: params[:picked_at], to: params[:good_until]}]
+      @lemons = Lemon.search("*", aggs: {date_field: {date_ranges: date_ranges}}).results
+    end
   end
-end
 ```
 
 It didn't work - life was giving me all the lemons - I got frustrated, and allowed my brain to shut off. I spent way more time on this than I needed to, and that's why I wrote this post.
