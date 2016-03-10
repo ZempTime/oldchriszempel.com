@@ -41,7 +41,7 @@ We want to know all the lemons that will be good until next week! To do that, we
 ```ruby
 class LemonsController < ApplicationController
   def search
-    @lemons = Lemon.search("*", { where: { born_at: {lte: params[:good_until]} }).results
+    @lemons = Lemon.search("*", { where: { picked_at: {lte: params[:good_until]} }).results
   end
 end
 ```
@@ -53,7 +53,7 @@ But what if we want the lemons good until next, but picked within the last week,
 ```ruby
 class LemonsController < ApplicationController
   def search
-    @lemons = Lemon.search("*", { where: { born_at: {lte: params[:good_until], gte: params[:picked_at]} }).results
+    @lemons = Lemon.search("*", { where: { good_until: {lte: params[:good_until], gte: params[:picked_at]} }).results
   end
 end
 ```
@@ -65,7 +65,7 @@ Scratch both those - we want to show the results for any lemons good until next 
 ```ruby
 class LemonsController < ApplicationController
   def search
-    @lemons = Lemon.search("*", { where: { born_at: {lte: params[:good_until]}, or: [{gte: params[:picked_at]}]} }).results
+    @lemons = Lemon.search("*", { where: { good_until: {lte: params[:good_until]}, or: [ picked_at: {gte: params[:picked_at]}]} }).results
   end
 end
 ```
